@@ -45,7 +45,8 @@ const Form = ({ sendData }) => {
         }
         else {
             // setAlert("input atleast 5 digit long")
-            showAlert("please put duration in decimal number", "danger")
+            showAlert("please put duration in decimal number", "danger");
+
         }
 
         // setAllEntry({ ...allEntry, newEntry });
@@ -63,7 +64,7 @@ const Form = ({ sendData }) => {
 
                     <input type="number" maxlength="2" min="0" max="99" placeholder="rating" name="rating" id="rating" value={rating} onChange={(e) => setRating(e.target.value)} /> <br /><br />
 
-                    <input type="text" placeholder="duration" name="duration" id="duration" value={duration} onChange={(e) => setDuration(e.target.value)} /><br /><br />
+                    <input type="text" placeholder="duration eg. 1.2" name="duration" id="duration" value={duration} onChange={(e) => setDuration(e.target.value)} /><br /><br />
 
                     <button type="submit">Add Movie</button>
                 </form>
